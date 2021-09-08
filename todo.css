@@ -1,0 +1,125 @@
+body{
+    background-image: linear-gradient(135deg, rgb(93, 158, 255), lightblue);
+}
+.container{
+    background-color: rgb(236, 236, 236, .4);
+    width: 550px;
+    padding: 10px;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: overlay;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#newtask{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
+    background-color: #fff;
+    height: 100px;
+    width: 520px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+#newtask input{
+    width: 300px;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 5px 8px #000000; 
+}
+#addbtn{
+    background-color: rgb(0, 136, 226);
+    border: none;
+    color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+#addbtn:hover{
+    color: rgb(0, 136, 226);
+    background-color: #fff;
+    border: 1px solid rgb(0, 136, 226);
+}
+#tasks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.task{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 7px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px #000000ad;
+    background-color: #fff;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 90px;
+    width: 510px;
+    overflow: auto;
+}
+#taskname{
+    font-size: 15px;
+    font-family: sans-serif;
+}
+#heading{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
+}
+.delbtn{
+    background-color: crimson;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: #fff;
+}
+.delbtn:hover{
+    background-color: #fff;
+    color: crimson;
+    border: 1px solid crimson;
+}
+.done{
+    text-decoration: line-through;
+}
+#extra{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 23px 0px 15px;
+}
+#priority, #input{
+    outline: none;
+    border-radius: 5px;
+}
+#extra{
+    display:flex;
+    justify-content: space-around;
+}
+.add{
+    font-family: 'Lobster', cursive;
+
+}
+.task::-webkit-scrollbar{           /*For scrollbar designing*/
+
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.733);
+}
+.task::-webkit-scrollbar-thumb{
+    background-image: radial-gradient( seagreen, lightblue);
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+    margin: 20px;
+}
